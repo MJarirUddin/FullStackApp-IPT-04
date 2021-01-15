@@ -1,0 +1,37 @@
+﻿{ /* only required on local dev machine ,not needed for publishing the app*/
+  /* agar koi settings deni hain  tou appsetting mn dena*/
+
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:60494",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MyKey": "Value of my key from Environment Variable"
+      }
+    },
+    "EmployeeManagement": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+        //"MyKey": "Value of my key from Command Line"
+
+      }
+    }
+  }
+}
+/*
+  this env var is prioritize ove rsystem environmetn
+  find screenshot in realme 3
+
+*/
